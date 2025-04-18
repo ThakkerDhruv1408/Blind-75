@@ -1,5 +1,5 @@
 '''
-Encode and Decode Strings
+271. Encode and Decode Strings
 Design an algorithm to encode a list of strings to a single string. The encoded string is then decoded back to the original list of strings.
 Please implement encode and decode
 
@@ -30,3 +30,4 @@ while i < len(Encoded):
     res.append(Encoded[j+1:j+1+length])
     i = j + 1 + length
 print(res)
+
