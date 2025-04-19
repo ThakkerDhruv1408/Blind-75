@@ -24,10 +24,13 @@ class Solution:
             freq[cnt].append(val)
         
         for i in range(len(freq)-1,0,-1):
+
             for val in freq[i]:
                 res.append(val)
-                if len(res) == k:
+
+                if len(res) == k:  
                     return res
+                
         return
     
 
@@ -36,28 +39,3 @@ k = 2
 test = Solution()
 w = test.topKFrequent(nums,k)
 print(w)
-
-
-# nums = [9,0,0,0,0,3,3,3,5,5,5,5,5,5,5,5]
-
-# k = 2
-
-# count = {}
-# freq = [[] for _ in range(len(nums) + 1)]
-
-# for i in range(len(nums)):
-#     count[nums[i]] = count.get(nums[i],0) + 1
-
-# for num, cnt in count.items():
-#     freq[cnt].append(num)
-
-# res = []
-# for i in range(len(freq) - 1, 0 , -1):
-#     for val in freq[i]:
-#         res.append(val)
-#         if len(res) == k:
-#             print(res)
-#             break
-
-
-

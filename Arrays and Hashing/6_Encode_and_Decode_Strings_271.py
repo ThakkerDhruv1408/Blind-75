@@ -12,6 +12,7 @@ Output:["neet","code","love","you"]
 
 strs = ["neet","code","love","you"]
 encode = ""
+
 for s in strs:
     encode += str(len(s)) + "#" + s
 print(encode)
@@ -22,12 +23,16 @@ print(encode)
 Encoded = "4#neet4#code4#love3#you"
 res = []
 i = 0
+
 while i < len(Encoded):
     j = i
+
     while Encoded[j] != "#":
         j += 1
+
     length = int(Encoded[i:j])
     res.append(Encoded[j+1:j+1+length])
     i = j + 1 + length
+
 print(res)
 
