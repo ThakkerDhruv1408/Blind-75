@@ -53,7 +53,7 @@ Each folder contains:
 
 ## 🚧 Progress
 
-- ✅ 15 / 75 Completed  
+- ✅ 24 / 75 Completed  
 *(Updated regularly)*
 
 ---
